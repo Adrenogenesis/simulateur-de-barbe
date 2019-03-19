@@ -1,4 +1,7 @@
 # simulateur-de-barbe
+Projet realise pour l'entreprise Direct Webmaster : créateur de site internet. ( Stage en entreprise )
+
+
 La structure du simulateur de barbe est basé sur la fonctionnalité Webcam, cette application doit être intégré à un site internet, de deux manières :
 
 L’une, en application “standalone” sur un site quelconque, par l’intermédiaire d’un “iframe” , “include” ou modal.
@@ -17,4 +20,6 @@ L’utilisateur peut mettre en place dimensionnellement le modèle choisi sur la
 Pour une protection de base efficace, le système de licence intégrant la session administration ne permet pas la configuration et le gestion de l’application par un client ( admin) non identifié, il doit être en possession d’un ou des numeros de serie, pour le déblocage de l’installation.
 
 BRODAR Frederic
+
+
 
