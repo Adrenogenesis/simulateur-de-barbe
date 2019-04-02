@@ -1,4 +1,4 @@
-# simulateur-de-barbe
+# Simulateur-de-barbe
 		Description de l’application “ Simulateur de barbe”
 
 

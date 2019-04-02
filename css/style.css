@@ -1,0 +1,281 @@
+/* Simulateur de barbe - Projet d'exament AFORMAC 2019 pour Direct Webmaster - BRODAR Frederic © Tous droits réservés - 2019  */
+* {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin:0;
+ }
+
+ *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+      justify-content: center;
+  }
+
+body {
+    background-image: url(../images/adult-beard.jpeg);
+    background-color: rgb(197, 185, 170);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+    cursor: move;
+}
+
+.warn {
+  color: red;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid {
+    z-index: 9999;
+}
+
+.cambk {
+    background-color: black;
+}
+
+.login {
+  padding-left: 10px;
+}
+
+.upload {
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #B2F7FE;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:  #B2F7FE;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .container {
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    background-image: url(../images/container1.png);
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+    opacity: 0.8;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+    }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .furniture {
+    margin-left: 10px;
+  }
+
+  .selector {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border: none;
+    display: flex;
+    padding: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(131, 131, 131, 0.5);
+    z-index: 999;
+  }
+
+  .inst {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #B2F7FE; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrap {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 200px;
+  height: 100px;;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:  #B2F7FE;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: rgb(133, 210, 255);
+  box-shadow: 0px 15px 20px rgba(67, 72, 78, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+  
+  footer {
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 50px;
+      padding-top: 1%;
+      text-align: center;
+      border: 2px solid rgb(0, 140, 255);
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #B2F7FE;
+      display: block;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .licence {
+      width: 30%;
+      background-color: bisque;
+  }
+
+  #overlay {
+    font-size: 1vw;
+    position: fixed;
+    display: none;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(42, 42, 42, 0.082);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: absolute;
+    padding-top: 10px;
+    top: 60%;
+    left: 70%;
+    font-size: 14px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  .text2 {
+    padding-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+
+
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 60%;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  }
