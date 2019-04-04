@@ -104,8 +104,8 @@ input[type=text], select, textarea {
     background-color: white;
     background-image: url(../images/container1.png);
     box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
-    opacity: 0.8;
-    filter: alpha(opacity=30); /* For IE8 and earlier */
+    opacity: 0.9;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
     }
 
   .col-25 {
@@ -135,7 +135,7 @@ input[type=text], select, textarea {
     align-items: center;
     border: none;
     border-radius: 10px;
-    background-color: rgba(131, 131, 131, 0.5);
+    background-color: rgb(199, 224, 253);
     z-index: 999;
   }
 
@@ -166,6 +166,55 @@ input[type=text], select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flash-button{
+  width: 200px;
+  height: 100px;;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:  rgb(1, 196, 255);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+	
+	animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: flash;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+@-moz-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
 }
 
 .button {
@@ -236,7 +285,7 @@ input[type=text], select, textarea {
     padding-top: 10px;
     top: 60%;
     left: 70%;
-    font-size: 14px;
+    font-size: 1vw;
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -253,13 +302,24 @@ input[type=text], select, textarea {
       margin-top: 0;
     }
 
+    .selector {
+      width: 100%;
+      height: auto;
+      border: none;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      border: none;
+      border-radius: 10px;
+      background-color: rgb(199, 224, 253);
+      z-index: 999;
+    }
 
   #overlay {
     position: fixed;
     display: none;
     width: 100%;
     height: 60%;
-    top: 5px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -272,7 +332,6 @@ input[type=text], select, textarea {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 50px;
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);

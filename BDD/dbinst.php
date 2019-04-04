@@ -33,7 +33,30 @@ if(isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <title>Installation</title>
+    <meta name="keywords" content="simulateur, barbe, simulateur de barbe, webcam, direct webmaster, webmaster, développeur, développeur web, aformac">
+    <meta name="author" content="Brodar Frédéric">
+    <meta name="publisher" content="Brodar Frédéric">
+    <meta name="language" content="fr" >
+    <meta name="distribution" content="global" >
+    <meta name="expires" content="never">
+    <meta name="Robots" content="index, follow">
+    <link rel="author" href="dcl.fredb@18pixel.fr">
+    <meta name="copyright" content="BRODAR-2019">
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Simulateur de barbe"/>
+    <meta property="og:description" content="Simulateur de barbe"/>
+    <meta property="og:url" content="https://info.exonet3i.com/directweb/">
+    <meta property="og:site_name" content="dcl.pfcv.18pixel" />
+    <meta property="article:publisher" content="Brodar Frédéric" />
+    <meta property="og:image" content="https://dcl.pfcv.18pixel.fr/dcl.fredb/img/brodar.jpg">
+    <meta name="twitter:image:src" content="http://www.exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:domain" content="http://www.exonet3i.com/">
+    <meta name="twitter:creator" content="@exonet3i">
+    <meta name="twitter:image" content="http://exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:url" content="https://twitter.com/exonet3i">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -345,7 +368,7 @@ echo 'Vous êtes connecté!'.'<br>';
         echo 'Toutes les données ont été importées !'.'<br>'.'<br>';
         //echo "<a href='$link_address'>Acceuil</a>";
         echo '
-        <div class="inst">               
+        <div class="flash-button">               
         <a href='.$link_address.'>Acceuil</a>
         </div>';
     } else {

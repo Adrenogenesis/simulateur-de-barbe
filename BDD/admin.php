@@ -75,13 +75,35 @@ if(isset($_POST['login'])){
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <title>Administrateur</title>
+    <meta name="keywords" content="simulateur, barbe, simulateur de barbe, webcam, direct webmaster, webmaster, développeur, développeur web, aformac">
+    <meta name="author" content="Brodar Frédéric">
+    <meta name="publisher" content="Brodar Frédéric">
+    <meta name="language" content="fr" >
+    <meta name="distribution" content="global" >
+    <meta name="expires" content="never">
+    <meta name="Robots" content="index, follow">
+    <link rel="author" href="dcl.fredb@18pixel.fr">
+    <meta name="copyright" content="BRODAR-2019">
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Simulateur de barbe"/>
+    <meta property="og:description" content="Simulateur de barbe"/>
+    <meta property="og:url" content="https://info.exonet3i.com/directweb/">
+    <meta property="og:site_name" content="dcl.pfcv.18pixel" />
+    <meta property="article:publisher" content="Brodar Frédéric" />
+    <meta property="og:image" content="https://dcl.pfcv.18pixel.fr/dcl.fredb/img/brodar.jpg">
+    <meta name="twitter:image:src" content="http://www.exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:domain" content="http://www.exonet3i.com/">
+    <meta name="twitter:creator" content="@exonet3i">
+    <meta name="twitter:image" content="http://exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:url" content="https://twitter.com/exonet3i">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -148,11 +170,10 @@ foreach($files as $file){
 }
 ?>
 <span class="warn">
-<p>Toutes les fichier inutiles ont été supprime !</p></span>
+<p>Tout les fichiers inutiles ont été supprimé !</p></span>
         <a href="logout.php">Déconnexion</a><br><br>
 			<span class="lien"class="lien" href="#">Copyright © 2019 </span>
-      <a class="lien" href="../condition-utilisation.html">Conditions d'utilisation</a>
-           </footer>
+            </footer>
 </div>
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

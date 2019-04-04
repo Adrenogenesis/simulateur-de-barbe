@@ -60,8 +60,30 @@ file_put_contents($file, $image_base64);
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <title>Simulateur de barbes</title>
+    <meta name="keywords" content="simulateur, barbe, simulateur de barbe, webcam, direct webmaster, webmaster, développeur, développeur web, aformac">
+    <meta name="author" content="Brodar Frédéric">
+    <meta name="publisher" content="Brodar Frédéric">
+    <meta name="language" content="fr" >
+    <meta name="distribution" content="global" >
+    <meta name="expires" content="never">
+    <meta name="Robots" content="index, follow">
+    <link rel="author" href="dcl.fredb@18pixel.fr">
+    <meta name="copyright" content="BRODAR-2019">
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Simulateur de barbe"/>
+    <meta property="og:description" content="Simulateur de barbe"/>
+    <meta property="og:url" content="https://info.exonet3i.com/directweb/">
+    <meta property="og:site_name" content="dcl.pfcv.18pixel" />
+    <meta property="article:publisher" content="Brodar Frédéric" />
+    <meta property="og:image" content="https://dcl.pfcv.18pixel.fr/dcl.fredb/img/brodar.jpg">
+    <meta name="twitter:image:src" content="http://www.exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:domain" content="http://www.exonet3i.com/">
+    <meta name="twitter:creator" content="@exonet3i">
+    <meta name="twitter:image" content="http://exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:url" content="https://twitter.com/exonet3i">
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
@@ -89,14 +111,14 @@ file_put_contents($file, $image_base64);
                      <br>
   <!--------------- Bouton de capture ---------------------------------------------->
             
-                   <button class="button" onClick="take_snapshot()">Capturer</button>
+                   <button class="flash-button" onClick="take_snapshot()">Capturer</button><br>
                    
                 <input type="hidden" name="image" class="image-tag">
              </div>
                    
       <div class="col-md-6">
        
-   <button class="button">Utiliser cette capture</button><br>
+   <button class="button"><img src="../images/arrow.png"></button><br>
    <!--------------- Affichage de la capture provenant du dossier "upload"---------------------------------------------->
   <div class="canvas-container" data-floorplan="../upload/<?php echo $fileName ?>">
   <!--------------- Canvas ---------------------------------------------->
@@ -152,7 +174,7 @@ if(isset($_POST['submit']))
    <!--------------- Acces a l'interface administrateur ---------------------------------------------->
       <a href="admin.php">Connexion</a><br><br>
 			<span class="lien"class="lien" href="#">Copyright © 2019 </span>
-      <a class="lien" href="../condition-utilisation.html">Conditions d'utilisation</a>
+      <a class="lien" href="../conditions-utilisation.html">Conditions d'utilisation</a>
            </footer>
 </div>
 <!-- Configure quelques parametres et attache la camera -->

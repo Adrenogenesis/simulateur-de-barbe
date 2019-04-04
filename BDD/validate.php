@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Installation</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <title>Validation</title>
+    <meta name="keywords" content="simulateur, barbe, simulateur de barbe, webcam, direct webmaster, webmaster, développeur, développeur web, aformac">
+    <meta name="author" content="Brodar Frédéric">
+    <meta name="publisher" content="Brodar Frédéric">
+    <meta name="language" content="fr" >
+    <meta name="distribution" content="global" >
+    <meta name="expires" content="never">
+    <meta name="Robots" content="index, follow">
+    <link rel="author" href="dcl.fredb@18pixel.fr">
+    <meta name="copyright" content="BRODAR-2019">
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Simulateur de barbe"/>
+    <meta property="og:description" content="Simulateur de barbe"/>
+    <meta property="og:url" content="https://info.exonet3i.com/directweb/">
+    <meta property="og:site_name" content="dcl.pfcv.18pixel" />
+    <meta property="article:publisher" content="Brodar Frédéric" />
+    <meta property="og:image" content="https://dcl.pfcv.18pixel.fr/dcl.fredb/img/brodar.jpg">
+    <meta name="twitter:image:src" content="http://www.exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:domain" content="http://www.exonet3i.com/">
+    <meta name="twitter:creator" content="@exonet3i">
+    <meta name="twitter:image" content="http://exonet3i.com/images/exonet3i.jpg">
+    <meta name="twitter:url" content="https://twitter.com/exonet3i">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -202,7 +224,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Envoie des donnees du produit avec la methode "POST".
                 //echo "<a href='".$link_address."&keys=$serie'>Terminer l'installation.</a>"."<br>";
                 echo '
-                <div class="inst">               
+                <div class="flash-button">               
                 <a href='.$link_address.'&keys='.$serie.'>Terminer l\'installation.</a>
                 </div>';
             }
@@ -211,7 +233,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 <footer>
      <span class="lien"class="lien" href="#">Copyright © 2019 </span>
-     <a class="lien" href="../condition-utilisation.html">Conditions d'utilisation</a>
+     <a class="lien" href="../conditions-utilisation.html">Conditions d'utilisation</a>
         </footer>
 </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

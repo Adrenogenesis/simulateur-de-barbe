@@ -20,7 +20,7 @@ echo 'Vous êtes connecté!';
                         <input type="file" name="files[]" multiple>
                             </div>
                                  <div class="col-25">    
-                            <input type="submit" value="Upload File" name="submit">
+                            <input type="submit" value="Télécharger" name="submit">
                         </div>
                     </div>
                 </form>

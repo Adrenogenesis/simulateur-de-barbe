@@ -4,6 +4,7 @@
 body {
   margin: 2em auto;
   max-width: 600px;
+  background-color: rgb(212, 245, 255);
 }
 
 form div {
@@ -16,4 +17,63 @@ form div label, form div input {
 
 .warn {
   color: red;
+}
+
+input[type=text] {
+  background-color: rgb(0, 125, 197);
+  color: white;
+}
+
+#flash-button{
+  width: 200px;
+  height: 100px;;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:  rgb(255, 1, 1);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+	
+	animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: flash;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+@-moz-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+.sup {
+  margin-bottom: 20px;
 }
