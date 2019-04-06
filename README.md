@@ -19,6 +19,9 @@ Pour une protection de base efficace, le système de licence intégrant la sessi
 
 ![alt text](https://info.exonet3i.com/directweb/simulateur-barbe.png)
 
+Documentation :
+
+[a link](http://expsylon.tk/simulator.html)
 
 BRODAR Frederic
 
