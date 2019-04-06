@@ -147,7 +147,8 @@ function Swap(obj,id){
 <option >drhouse</option>
 <option >justformen</option>
 <option >hungergames</option>
-<option >more</option>
+<option >barbe1</option>
+<option >barbe2</option>
 </select>
 <!--------------- Glisser - deposer ---------------------------------------------->
 <img draggable="true" id="MyImg" src="../images/john.png" width=100 height=100 >
@@ -192,7 +193,7 @@ if(isset($_POST['submit']))
     function take_snapshot() {
        Webcam.snap( function(data_uri) {
             $(".image-tag").val(data_uri);
-            alert ("Capture effectuee !");
+            alert ("Capture effectuée !");
         } );
     }
 </script>

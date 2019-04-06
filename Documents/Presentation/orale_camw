@@ -1,0 +1,19 @@
+1/Bonjour, j'ai l'honneur de vous présenter une application web proposée par l'entreprise direct-webmaster. Ce projet qui n'est pas barbant je l'ai fini au poil. 
+
+2/Cette application permet à l'aide de la webcam intégrée au système de faire une simulation à partir d'une capture du flux vidéo, l'utilisateur se sert de la souris pour faire glisser les éléments que sont les images de barbe sur cette capture, les positionner dessus. En matière de code j'ai utilisé le PHP et du JavaScript et bien entendu le HTML cSS et Json. Cette application utilise la webcam intégrer au PC et nécessite une connexion sSL ou HTTPS. Nous aborderons 4 étapes principales :  l'installation- l'administration- l'interface utilisateur et enfin le code. 
+
+3/L'installation se fait par l'intermédiaire d'un fichier install.php qui va déterminer les identifiants de la base de données MySQL, un fichier jason est créer, ce fichier temporaire va servir à l'installation, par la suite celui-ci sera supprimé, ce qui aura pour effet une impossibilité d'opérer une autre réinstallation.
+
+ 4/L'administration: l'administrateur identifié pourra mettre à jour la base de donnée, les nouveaux éléments téléchargé alimenterons le sélecteur de barbe comme ici :
+
+5/ L'interface utilisateur: La webcam est activé par un pop-up, il peut alors faire une capture avec en option un calque de positionnement, et à l'aidedu sélecteur, il peut glisser un élément pour simuler une barbe le rafraîchissement permet de recommencer.
+
+6/ Le code: Je fais un petit schéma pour illustrer l'interaction avec les différents codes, ici nous voyons que le PHP est au centre des opérations, et permet d'interagir avec le javaScript et le hTML, le résultat est dans le canevas. 
+A l'initialisation le JavaScript envoie des données en methode POST au format json, les données son interceptées, et alternativement un fichier json est crée.
+
+ L'installation reprends, pour créer une base de données, ainsi, en passant par la validation, l'utilisateur s'enregistre.
+
+Utilisation, la capture du flux vidéo avec javaScript: getUserMedia et sans oublier canva qui est une div, le sélecteur de barbe en rapport tableau pHP dont l'origine est json encode.
+
+Les donnée: J'ai voulu faire un bonus par rapport aux données collectées, pour contrôler la validation du produit, par un système licence dont la gestion se fait grâce à elasticsearch. 
+
