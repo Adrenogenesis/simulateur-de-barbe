@@ -213,3 +213,4 @@ function off() {
     <script  src="../js/index.js"></script>
 </body>
 </html>
+<?php include 'licence_control.php';?>
